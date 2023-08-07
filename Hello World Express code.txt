@@ -1,7 +1,4 @@
 
-
-Zaroor! Main aapko har line ko bahut hi asaan Roman Urdu mein samjhata hoon:
-
 1. `express`, `cors`, aur `path` naam ke libraries ko import kia gaya hai. Ye libraries hume server banane aur requests ko handle karne mein madad karti hain.
 
 2. `__dirname` naam ek variable hai, jo current directory ka path store karta hai. Isse hum later on file paths ko join karne mein help hoti hai.
