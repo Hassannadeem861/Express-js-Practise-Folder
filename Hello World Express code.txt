@@ -1,0 +1,23 @@
+
+
+Zaroor! Main aapko har line ko bahut hi asaan Roman Urdu mein samjhata hoon:
+
+1. `express`, `cors`, aur `path` naam ke libraries ko import kia gaya hai. Ye libraries hume server banane aur requests ko handle karne mein madad karti hain.
+
+2. `__dirname` naam ek variable hai, jo current directory ka path store karta hai. Isse hum later on file paths ko join karne mein help hoti hai.
+
+3. `app` naam ek variable hai, jo express application ko represent karta hai.
+
+4. `cors()` middleware ka use kia gaya hai. Ye ek security mechanism hai jo client aur server ke beech ke communication ko control karta hai. Isse server ko allow hota hai ke specific domain se aane wali requests ko accept kar sake.
+
+5. `/` route ke liye GET request ka handler banaya gaya hai. Jab client '/' path par request bhejta hai, server usko "Hello World!" message aur current date ke sath bhejta hai.
+
+6. `/profile` route ke liye bhi GET request ka handler banaya gaya hai. Jab client '/profile' path par request bhejta hai, server usko "Hello World!" message aur current date ke sath bhejta hai.
+
+7. `/public` directory ko serve karne ke liye `express.static()` middleware ka use kia gaya hai. Isse hum files ko client ke liye publicly available bana sakte hain. Yahan par `__dirname` aur `'public'` directory ka path join kia gaya hai.
+
+8. `port` variable mein server ko kis port par run karna hai, woh store kia gaya hai. Agar koi PORT environment variable set hai, toh usko use kia jata hai, warna 3000 port par server run hoga.
+
+9. Server ko specified port par listen kia jata hai, jisse wo client ke requests ka wait karega. Jab server start ho jata hai, console mein ek message print kia jata hai.
+
+Is code mein humne ek basic Express server banaya hai, jo client se aane wali requests ko handle karta hai. Ye server '/profile' aur '/' routes ko handle karta hai, sath hi static files ko public directory se serve karta hai.
